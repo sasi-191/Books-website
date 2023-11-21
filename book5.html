@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Book5 - INTROSPECTIVE VOYAGER</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/8347e772e4.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="style.css">
+<style>
+    a{text-decoration: none;}
+    a:hover{text-decoration: none;}
+</style>
+<script>
+	var right = document.getElementsByClassName("right");
+    var si = right.length;
+    var z=1;
+    turnRight();
+    function turnRight()
+    {
+        if(si>=1){
+            si--;
+        }
+        else{
+            si=right.length-1;
+            function sttmot(i){
+                setTimeout(function(){right[i].style.zIndex="auto";},300);
+            }
+            for(var i=0;i<right.length;i++){
+                right[i].className="right";
+                sttmot(i);
+                z=1;
+            }
+        }
+        right[si].classList.add("flip");
+        z++;
+        right[si].style.zIndex=z;
+    }
+    function turnLeft()
+    {
+        if(si<right.length){
+            si++;
+        }
+        else{
+            si=1;
+            for(var i=right.length-1;i>0;i--){
+                right[i].classList.add("flip");
+                right[i].style.zIndex=right.length+1-i;
+            }
+        }
+        right[si-1].className="right";
+        setTimeout(function(){right[si-1].style.zIndex="auto";},350);
+    }
+</script>
+
+</head>
+<body style=" background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);">
+
+<!-- NAVBAR START -->
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+ 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Dr.P.V.LAXMI PRASAD</a>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link " href="index.html" style="color: white">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href=""  style="color: white">About</a>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle"  style="color: white">WRITINGS</a>
+        <div class="dropdown-content ">
+            <a class="dropdown-item " href="">d1</a>
+            <a class="dropdown-item " href="">d2</a>
+            <a class="dropdown-item " href="">d3</a>
+            <a class="dropdown-item " href="">d4</a>
+        </div>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href=""  style="color: white">INTERVIEWS</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href=""  style="color: white">SPEECHES</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href=""  style="color: white">GALLERY</a>
+    </li>
+    </ul>
+  </div>
+  </div>  
+</nav>
+
+<!-- NAVBAR ENDS -->
+
+<!-- BOOK TITLE -->
+<div class="card container d-flex justify-content-center service" style="margin-top: 10px;margin-bottom: 30px;" data-aos="zoom-in">
+  <div class="card-body">
+    <h2 style="font-size:45px;font-weight:bold;font-family:gothicb;">INTROSPECTIVE VOYAGER</h2>
+  </div>
+</div>
+<!-- BOOK TITLE END -->
+
+<!-- BOOK COVER -->
+<div class="container" style="margin-top:10px" data-aos="fade-left">
+  <div class="row">
+    <div class="col-sm-4">
+	  	<div class="book-section">
+        <div class="container">
+            <div class="right">
+                <figure class="back" id="back-cover" style="background-image: url('Book images/Book images/Book39/39_page-0003.jpg'); background-size: 175px 300px;"></figure>
+                <figure class="front" style="background-image: url('Book images/Book images/Book39/39_page-0002.jpg'); background-size: 180px 300px;background-repeat: no-repeat;"></figure>
+            </div>
+            <div class="right">
+                <figure class="back"  style="background-image: url('Book images/Book images/Book1/c1.png'); background-size: cover;background-repeat: no-repeat;"></figure>
+                <figure class="front"  style="background-image: url('Book images/Book images/Book39/39_page-0001.jpg'); background-size: 176px 300px;"  id="cover">
+                </figure>
+            </div>
+        </div>
+		</div>
+    <div class="row d-flex justify-content-center">
+      <button class="buttonn" onclick="turnLeft()" style="margin-left: 120px;">Prev Page</button> 
+      <button class="buttonn" onclick="turnRight()" style="margin-left: 15px;">Next Page</button>
+    </div>
+    </div>
+	<div class="col-sm-8">
+      <div class="card service1 row" >
+        <h5 class="d-flex justify-content-center" style="font-family: gothicb;"><b>Description:</b></h5>
+        <p style="text-align:center;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        The Poetry of T.V. Reddy is grounded in human struggles and unrest, social as well as psychological and depicts the varied shades of restlessness that is the order of modern times.He protests against
+        <br> the social ills and evils in a gripping way in his absorbing poetry.  	
+        He paints his experiences in a characteristic choice diction and the different images that he has carved out of human life and nature make a deep impression on the minds of the readers and linger there.
+        The poet takes the readers into the soul of India, the villages and rural life which are the backbone of the country—that speaks volumes of his commitment to rural element and makes people come alive in his poetry.
+        T.V. Reddy is not only a poet of highly perceptive temperament but also an accomplished critic and novelist. His awesome ingenious insight into the purpose and meaning of life in a perceptive and intuitive way leads the reader to the invisible force meticulously driving the point that the spiritual region lying within a man offers solace, harmony and consolation par excellence. For Reddy often finds strong affinity in Indian soil and here, rural backdrop inspires him to cultivate niceties of life where rural-oriented background turns out religious for him.
+        </p>
+    	</div>
+    </div>
+  </div>
+</div>
+<!-- BOOK COVER END-->
+
+<!--BUY NOW -->
+<div class="container " style="margin-top: 30px;" data-aos="fade-right">
+  <div class="row">
+    <div class="col-md-6 ">
+      <div class="card service1">
+        <div class="card-header ">
+          <h2 style="font-family: gothicb;text-align: center;">About This book</h2>
+        </div>
+        <div class="card-body " style="font-size: 15px;">
+          <p><b>Author:</b>K.V.Raghupathi</p>
+          <p><b>Editor:</b> P V Laxmiprasad</p>
+          <p><b>Publisher:</b> AUTHORS PRESS</p>
+          <p><b>Language:</b> English</p>
+          <p><b>Paperback:</b>256 pages</p>
+        </div>
+        </div>
+    </div>
+    <div class="col-md-6 ">
+      <div class="card service1">
+        <div class="card-header ">
+          <h2 style="font-family: gothicb;text-align: center;">CHECK OUT FROM BELOW</h2>
+        </div>
+        <div class="card-body">
+          <div class="row d-flex justify-content-center">
+            <img src="images/amazon.png" max-width="100%" height="75px">
+            <span style="margin-top: 20px;font-size: 15px; text-align: center;"><a href="https://amzn.eu/d/0lgvwWw" class="buynow" target="_blank" >BUY NOW</a></span>
+           </div>
+           <div class="row d-flex justify-content-center">
+            <img src="images/flipkart.png" max-width="100%" height="75px" >
+            <span style="margin-top:20px;margin-bottom: 60px; font-size: 15px; text-align: center;"><a href="https://www.flipkart.com/introspective-voyager-collection-critical-essays-poetry-k-v-raghupathi-2014-256-pp/p/itmdvn9mhxy67xp9?pid=9788172738501&lid=LSTBOK9788172738501VYANER&marketplace=FLIPKART&q=INTROSPECTIVE+VOYAGER+book&store=bks&srno=s_1_1&otracker=search&otracker1=search&fm=organic&iid=6453f534-83f4-4560-a4d6-49fbb9d2a973.9788172738501.SEARCH&ppt=hp&ppn=homepage&ssid=pnn3tcc2qo0000001697620462135&qH=af8a95cdd47030c9" class="buynow " target="_blank">BUY NOW</a></span>
+           </div>
+        </div>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- BUY NOW END -->
+
+<!-- SOCIAL MEDIA -->
+<div class="container-fluid"  style="margin-top: 30px;" data-aos="zoom-in">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="row d-flex justify-content-center" >
+        <h2 style="font-family: gothiicb;margin-top: 12px;">FOLLOW US ON</h2>
+       <div class="wrapper">
+         <div class="button">
+            <div class="icon">
+               <i class="fab fa-facebook-f"></i>
+            </div>
+            <span>Facebook</span>
+         </div>
+         <div class="button">
+            <div class="icon">
+               <i class="fab fa-twitter"></i>
+            </div>
+            <span>Twitter</span>
+         </div>
+         <div class="button">
+            <div class="icon">
+               <i class="fab fa-instagram"></i>
+            </div>
+            <span>Instagram</span>
+         </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+<!-- SOCIAL MEDIA END -->
+
+<!-- REVIEWS -->
+<div class="container"  style="margin-top: 30px;" data-aos="zoom-in">
+  <div class="row">
+    <div class="col-sm-4">
+		 <div class="card service1">
+		 <div class="card-header">
+      <h2 style="text-align: center; font-family: gothicb;font-size: 20px;">Cick on image for gallery</h2>
+		 </div>
+		 <div class="card-body">
+		 <img id="myImg" class="img-fluid" src="images/msd.jpg" style="width: 100%;">
+		 </div>
+		 </div>
+			<div class="card service1"style="margin-top: 15px;">
+			<div class="card-header">
+				<h3 style="text-align: center; font-family: gothicb;"> Write About This Book</h3>
+			</div>
+			<div class="card-body">
+				<form action="#" class="form-group">
+				   <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Name"><br>
+				   <input type="text" class="form-control" id="email" name="email" placeholder="Email"><br>
+				   <input type="text" class="form-control" id="comments" name="comments" placeholder="Comments"><br>
+				  <input type="submit" class="btn btn-primary form-control" value="Submit">
+				</form>
+			</div>
+			</div>
+    </div>
+	
+	<div class="col-sm-8" data-aos="zoom-in">
+	  <div class="card service1">
+	    <div class="card-body">
+			<h2 style="text-align: center; font-family: gothicb;">TESTIMONIALS</h2>
+    <div class="review">
+      <img src="images/dp.png"  style="width:90px">
+      <p><span>Harshitha</span></p>
+      <p style="font-family: cursive;">"Introspective voyager no doubt is an introspective voyage into the collection of research papers delving deep into Dr.Rsghupathy's poetry collections"</p>
+    </div>
+    <div class="review">
+      <img src="images/dp.png"  style="width:90px">
+      <p><span>	Om Padgilwar</span></p>
+      <p style="font-family: cursive;">"KV Raghupathi is an Indian poet in English. Laxmiprasad edited this book wonderfully well. Variety is the brand mark of this critical book. All the research papers contain full of philosophy, of nature, and Existence. Nicely edited and nicely depicted."
+      </p>
+    </div>
+      <div class="review">
+      <img src="images/dp.png"  style="width:90px">
+      <p><span>Rudransh</span></p>
+      <p style="font-family: cursive;">"A well edited and executed book on the poetry of KV Raghupathi. Exploration of themes is indeed superb. All the contributors are masters of critics. Really the volume is known for subtleties on the poetry of KV Raghupathi. Laxmiprasad is simply superb."</p>
+    </div>
+		  </div>
+	  </div>
+  </div>
+	
+  </div>
+</div>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer" style="margin-top: 10px;"   style="margin-top: 50px">  
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 col-md-2 ">
+            <img class="footerimg" src=""  alt="Logo" >
+          </div>
+          <div class="col-sm-12 col-md-4 ">
+            <h6 class="d-flex justify-content-center">About</h6>
+            <p class="text-justify"> <b> Dr. P.V. Laxmiprasad</b> is an active academician, an avid researcher, a literary critic, and a resource person. A teacher with two decades of experience, he is the author and editor of 10 published books in English Literature. He is widely published in journals, books and anthologies. His publications speak of his outstanding credentials and long-standing commitment to English literature. Overall, he has 300 publications to his credit. He has passion for music and literature. He is working in the Department of English, Satavahana University, Karimangar, Telanagana, India.</p>
+          </div>
+    
+          <div class="col-xs-6 col-md-2">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">LIFE</a></li>
+              <li><a href="#">INTERVIEWS</a></li>
+              <li><a href="#">SPEECHES</a></li>
+              <li><a href="#">GALLERY</a></li>
+			  <li><a href="#">ARCHIVES</a></li>
+			  <li><a href="#">TRIBUTE</a></li>
+              </ul>
+          </div>
+    
+          <div class="col-xs-6 col-md-2">
+            <h6>WRITINGS</h6>
+            <ul class="footer-links">
+              <li><a href="#">Link</a></li>
+               <li><a href="#">Link</a></li>
+               <li><a href="#">Link</a></li>
+               <li><a href="#">Link</a></li>
+               <li><a href="#">Link</a></li>
+               <li><a href="#">Link</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-md-2">
+            <div class="row">
+              <h6 style="margin-left: 10px;">
+                POWERED BY
+              </h6>
+            </div>
+            <div class="row">
+              <img src="images/telstalogo.jpg" alt="telsta logo" style="max-width: 100%;height: 50px;margin-left: 20px;">
+            </div>
+            <div class="row">
+            <div class="dropdown" style="margin-top: 10px;">
+              <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                DEVELOPED BY
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item " href="">SASI KARTHIK BEZAWADA </a>
+                <a class="dropdown-item " href="">MD SALMAN SHAIK</a>
+                <a class="dropdown-item " href="">ANUSHA</a>
+                <a class="dropdown-item " href="">SWARUPA DASARI</a>
+                <a class="dropdown-item " href="">LEKHANA ALLU</a>
+                <a class="dropdown-item " href="">RAJESHWARI</a>
+	        	<a class="dropdown-item " href="">SANGHAVI</a>
+                <a class="dropdown-item " href="">NIKITHA</a>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container-fluid">
+          <div class="row d-flex justify-content-center">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy;All Rights Reserved by 
+                <a href="index.html">Telsta</a>.
+             </p>
+          </div>
+          </div>
+      </div>
+    </footer>
+    <!--FOOTER END -->
+</body>
+
+ <!-- Scroll animation start-->
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script>
+   AOS.init({
+     duration: 1500,
+     once: true,
+   });
+ </script>
+ <!-- Scroll animation end-->
+
+</html>
